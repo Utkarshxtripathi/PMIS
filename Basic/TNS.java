@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class TNS {
     public static void main(String[] args) {
          Scanner sc=new Scanner(System.in);
-        System.out.println("I PLAY FOOTBALL");
+       /*  System.out.println("I PLAY FOOTBALL");
         System.out.println("MANGO\nAPPLE\nCHERRY");
         
         String name;
@@ -28,7 +28,12 @@ public class TNS {
             System.out.println(num2 + " is greater than " + num1);
         } else {
             System.out.println("Both numbers are equal");
-        }
+        }*/
+       int x=10;
+       {
+        int x=20;
+        System.out.println(x);
+       }
       
     }
 }
