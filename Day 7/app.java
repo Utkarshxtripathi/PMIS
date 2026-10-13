@@ -3,7 +3,7 @@
 //         car sc = new car();
 //         sc.drive();
 //     }
-
+    
 // }
 
 // public class app {
@@ -12,16 +12,14 @@
 //         Address A1 = new Address()
 //         Student S1 = new Student()
 //      }
-
+    
 //  } 
 
-public class app {
-    public static void main(String[] args) {
-        Battery phbattery = new Battery(250);
-        Camera phcam = new Camera(450);
-
-        Phone motorola = new Phone("Pixel", phbattery, phcam);
-
-        motorola.snapPicture();
-    }
+class app{
+    public static void main(String[] args){
+Battery phbattery = new Battery(capacitymaH: 250);
+Camera phcam = new Camera(pix: 450);
+Phone motorola = new Phone(brand: "Pixel", phbattery, phcam);
+motorola.snapPicture();
+}
 }

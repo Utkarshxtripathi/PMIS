@@ -14,6 +14,8 @@ Implemented via: Declaring an instance of one class inside another class.
 
 Plain English test: "Does a Car have an Engine?" Yes. Therefore, Car HAS-A Engine. (A car is not...)
 */
+
+//  Static Final  abstract
  
 
 // class Engine{
@@ -64,15 +66,18 @@ Plain English test: "Does a Car have an Engine?" Yes. Therefore, Car HAS-A Engin
 // }
 // }
 
-class Battery {
+class Battery{
     int capacitymaH;
-
-    Battery(int capacitymaH) {
-        this.capacitymaH = capacitymaH;
+    Battery(int capacitymaH){
+        this.capacitymaH=capacitymaH;
+    }
+    void drain()
+    {
+        System.out.println("Battery used. Capacity remaining:"+ (capacitymaH-100)+"MAH");
     }
 }
-
-class Camera {
+class Camera{
+    
     int pix;
 
     Camera(int pix) {
@@ -84,8 +89,9 @@ class Camera {
     }
 }
 
-class Phone {
-    String brand;
+
+class Phone{
+     String brand;
     Battery battery;
     Camera camera;
 
@@ -96,6 +102,8 @@ class Phone {
     }
 
     void snapPicture() {
+        System.out.println("[" + brand + "] is active.");
         camera.takePhoto();
+        battery.drain();
     }
 }
