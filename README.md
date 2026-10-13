@@ -61,17 +61,30 @@ Welcome to the **Java Learning & Practice Repository**! This repository document
 │       ├── relationship.java                    # IS-A vs HAS-A relationship theory, Battery, Camera, Phone
 │       └── app.java                             # HAS-A composition execution (Phone assembling Battery & Camera)
 └── Day 8/
-    └── Exception Handling/                      # Robust Error & Exception Handling
-        ├── Basics/
-        │   ├── Exception.java                   # Try-catch handling (Arithmetic & ArrayIndexOutOfBounds)
-        │   └── ProblemStatement.java            # Graceful zero-division handling using try-catch
-        ├── Finally/
-        │   └── finally1.java                    # Cleanup & guaranteed execution with `finally` block
-        ├── Keywords/
-        │   ├── throw.java                       # Explicit exception generation with `throw` keyword
-        │   └── throws.java                      # Declaring checked exceptions using `throws` keyword
-        └── Practice/
-            └── ATMWithdrawl.java                # Practical ATM balance validation using try-catch & throw
+    ├── Exception Handling/                      # Robust Error & Exception Handling
+    │   ├── Basics/
+    │   │   ├── Exception.java                   # Try-catch handling (Arithmetic & ArrayIndexOutOfBounds)
+    │   │   └── ProblemStatement.java            # Graceful zero-division handling using try-catch
+    │   ├── Finally/
+    │   │   └── finally1.java                    # Cleanup & guaranteed execution with `finally` block
+    │   ├── Keywords/
+    │   │   ├── throw.java                       # Explicit exception generation with `throw` keyword
+    │   │   └── throws.java                      # Declaring checked exceptions using `throws` keyword
+    │   └── Practice/
+    │       └── ATMWithdrawl.java                # Practical ATM balance validation using try-catch & throw
+    ├── Wrapper Classes/                         # Wrapper Classes, Autoboxing/Unboxing & Utility Methods
+    │   ├── StringSum.java                       # Parsing and summing comma-separated numbers using Integer.parseInt()
+    │   ├── PasswordAnalyzer.java                # Character classification using Character utility methods
+    │   ├── FilterEvens.java                     # Autoboxing and unboxing in collections (filtering even numbers)
+    │   └── IntegerCacheDemo.java                # Demonstration of Java's Integer Cache (-128 to 127)
+    ├── Arrays/                                  # Fundamental Array Operations & Two-Pointer Logic
+    │   ├── SumAndAverage.java                   # Calculate sum and floating-point average of n user inputs
+    │   ├── LargestSmallest.java                 # Linear scan to track maximum and minimum values
+    │   ├── ReverseArray.java                    # In-place array reversal using two-pointer approach
+    │   └── SecondLargest.java                   # Find second largest distinct element in a single pass (O(n))
+    └── Strings/                                 # String Manipulation & Two-Pointer Algorithms
+        ├── VowelsAndConsonants.java             # Count vowels and consonants filtering non-alphabetic chars
+        └── PalindromeCheck.java                 # In-place palindrome verification using two-pointer technique
 ```
 
 ---
@@ -119,13 +132,25 @@ Welcome to the **Java Learning & Practice Repository**! This repository document
 - **`static` Keyword**: Class-level variables and methods shared across instances (`staticL.java`, `PracticeQues.java`).
 - **Object Relationships**: IS-A (Inheritance) vs HAS-A (Composition & Aggregation) design paradigm (`relationship.java`, `app.java`).
 
-### **Day 8: Robust Exception Handling**
+### **Day 8: Robust Exception Handling, Wrapper Classes, Arrays & Strings**
 - **Try-Catch Fundamentals**: Catching runtime exceptions like `ArithmeticException` and `ArrayIndexOutOfBoundsException` (`Exception.java`, `ProblemStatement.java`).
 - **The `finally` Block**: Guaranteeing execution regardless of whether an exception occurs (`finally1.java`).
 - **`throw` vs `throws`**:
   - `throw`: Manually throwing exceptions for invalid conditions (`throw.java`).
   - `throws`: Propagating and declaring checked exceptions (`throws.java`).
 - **Real-World Application**: ATM withdrawal simulation with balance checking and custom exception triggers (`ATMWithdrawl.java`).
+- **Wrapper Classes & Parsing**: Parsing comma-separated string to primitive integers using `Integer.parseInt()` (`StringSum.java`).
+- **Character Utility Methods**: Password character analysis using `Character.isUpperCase()`, `isLowerCase()`, and `isDigit()` (`PasswordAnalyzer.java`).
+- **Autoboxing & Unboxing**: Working with wrapper types in generic collections (`ArrayList<Integer>`) and unboxing for arithmetic operations (`FilterEvens.java`).
+- **Integer Cache**: Exploring object reference caching for values between `-128` and `127` (`IntegerCacheDemo.java`).
+- **Array Operations**:
+  - Sum and average calculation (`SumAndAverage.java`).
+  - Min/max linear scan (`LargestSmallest.java`).
+  - In-place reversal with two pointers (`ReverseArray.java`).
+  - Single-pass distinct second largest search (`SecondLargest.java`).
+- **String Algorithms**:
+  - Vowel & consonant frequency counter (`VowelsAndConsonants.java`).
+  - Two-pointer palindrome validator (`PalindromeCheck.java`).
 
 ---
 
