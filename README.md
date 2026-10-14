@@ -60,7 +60,7 @@ Welcome to the **Java Learning & Practice Repository**! This repository document
 │   └── Relationships/
 │       ├── relationship.java                    # IS-A vs HAS-A relationship theory, Battery, Camera, Phone
 │       └── app.java                             # HAS-A composition execution (Phone assembling Battery & Camera)
-└── Day 8/
+├── Day 8/
     ├── Exception Handling/                      # Robust Error & Exception Handling
     │   ├── Basics/
     │   │   ├── Exception.java                   # Try-catch handling (Arithmetic & ArrayIndexOutOfBounds)
@@ -85,6 +85,39 @@ Welcome to the **Java Learning & Practice Repository**! This repository document
     └── Strings/                                 # String Manipulation & Two-Pointer Algorithms
         ├── VowelsAndConsonants.java             # Count vowels and consonants filtering non-alphabetic chars
         └── PalindromeCheck.java                 # In-place palindrome verification using two-pointer technique
+└── Day 9/
+    ├── Thread Creation/                         # Thread instantiation and concurrent execution
+    │   ├── Extending Thread/
+    │   │   └── ThreadDemo.java                  # Creating threads by extending the Thread class
+    │   ├── Implementing Runnable/
+    │   │   ├── RunnableDemo.java                # Implementing Runnable functional interface
+    │   │   └── ThreadNamingDemo.java            # Thread(Runnable, name) constructor and getName()
+    │   └── Concurrent Execution/
+    │       └── ConcurrentExecutionDemo.java     # Concurrent multi-threaded execution with Thread A & B
+    ├── Thread Lifecycle and Control/            # Managing thread lifecycle states and execution
+    │   ├── Lifecycle/
+    │   │   └── ThreadLifeCycle.java             # Inspecting thread state transitions with getState()
+    │   ├── Sleep/
+    │   │   └── ThreadSleepDemo.java             # Timed delays with Thread.sleep() and InterruptedException
+    │   ├── Join/
+    │   │   └── ThreadJoinDemo.java              # Coordinating thread termination with join()
+    │   └── Priority/
+    │       └── ThreadPriorityDemo.java          # Thread priorities (MIN_PRIORITY, NORM_PRIORITY, MAX_PRIORITY)
+    ├── Synchronization/                         # Critical sections, locks, and thread safety
+    │   ├── Race Condition Problem/
+    │   │   └── UnsynchronizedRailwayBooking.java # Race condition demo in ticket booking without locks
+    │   ├── Synchronized Solution/
+    │   │   └── SynchronizedRailwayBooking.java   # Thread-safe booking using synchronized method
+    │   └── Synchronized Counter/
+    │       └── SynchronizedCounter.java         # Preventing lost updates with synchronized counter and join()
+    ├── Inter-Thread Communication/              # Cooperative thread signaling using monitors
+    │   ├── Wait and Notify/
+    │   │   └── WaitNotifyDemo.java              # Low-level coordination using wait() and notify()
+    │   └── Producer Consumer/
+    │       ├── ProducerConsumerRunnable.java    # Producer-Consumer coordination with Runnable and notifyAll()
+    │       └── ProducerConsumerThread.java      # Producer-Consumer queue pattern using Thread subclasses
+    └── Notes/
+        └── MultithreadingNotes.md               # In-depth reference notes on Multithreading and Concurrency
 ```
 
 ---
@@ -151,6 +184,28 @@ Welcome to the **Java Learning & Practice Repository**! This repository document
 - **String Algorithms**:
   - Vowel & consonant frequency counter (`VowelsAndConsonants.java`).
   - Two-pointer palindrome validator (`PalindromeCheck.java`).
+
+### **Day 9: Multithreading, Thread Lifecycle, Synchronization & Concurrency**
+- **Thread Creation & Execution**:
+  - Extending `java.lang.Thread` (`ThreadDemo.java`).
+  - Implementing `java.lang.Runnable` for decoupled task execution (`RunnableDemo.java`).
+  - Naming threads via `Thread(Runnable, String)` constructor (`ThreadNamingDemo.java`).
+  - Concurrent multi-threaded execution tracking iterations across named threads (`ConcurrentExecutionDemo.java`).
+- **Thread Lifecycle & State Management**:
+  - Lifecycle state monitoring with `getState()` before and after `start()` (`ThreadLifeCycle.java`).
+  - Timed execution pausing using `Thread.sleep()` and handling `InterruptedException` (`ThreadSleepDemo.java`).
+  - Thread coordination and awaiting termination using `join()` (`ThreadJoinDemo.java`).
+  - Thread priority scheduling with `Thread.MIN_PRIORITY`, `NORM_PRIORITY`, and `MAX_PRIORITY` (`ThreadPriorityDemo.java`).
+- **Synchronization & Race Conditions**:
+  - Race Condition simulation: overbooking shared seats in an unsynchronized railway booking system (`UnsynchronizedRailwayBooking.java`).
+  - Mutual exclusion using `synchronized` methods for critical sections (`SynchronizedRailwayBooking.java`).
+  - Thread-safe shared counter avoiding lost updates across concurrent threads (`SynchronizedCounter.java`).
+- **Inter-Thread Communication**:
+  - Monitor synchronization using `wait()` and `notify()` on shared objects (`WaitNotifyDemo.java`).
+  - The classic Producer-Consumer pattern using `wait()` and `notifyAll()` with `Runnable` workers (`ProducerConsumerRunnable.java`).
+  - Multi-threaded Producer-Consumer buffer model extending `Thread` (`ProducerConsumerThread.java`).
+- **Comprehensive Notes**:
+  - In-depth reference notes covering processes vs threads, context switching, lifecycle states, priorities, synchronization, and monitors (`MultithreadingNotes.md`).
 
 ---
 
