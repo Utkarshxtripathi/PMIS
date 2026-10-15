@@ -7,6 +7,7 @@ class Util {
 
     static <T> T firstOf(T a, T b) {
         return b;
+      //return a;
     }
 }
 
